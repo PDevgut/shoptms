@@ -1,0 +1,147 @@
+/*  Base_.html  */
+h1 {text-align: center;
+    color: #efefe3}
+hr {border: 0; height: 1px; background: #000;
+    background-image: -webkit-linear-gradient(left, #fff, #000, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+    background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+    background-image: -o-linear-gradient(left, #fff, #000, #fff);}
+
+div {  margin: 3%; border: 2px  }
+
+body {background-color: #fafafa;}
+
+h1 {text-align: center;}
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  position: relative;
+  background: #333333;
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left;}
+.right-item {float: right;}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%,-50%);
+  font-size: 35px;
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #efefef;
+  transition: .3s linear;
+}
+.menu-main a:hover {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+}
+
+.td-menu {
+width 25%;
+}
+
+.td-content{
+width 75%;
+}
+
+#body_div {
+margin: 0 auto;
+}
+
+/*  Index.html  */
+ .blog_box {
+    float: left;
+    display: block;
+    margin: 2%;
+    width: 18%;
+    resize: vertical;
+    padding:15px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 8px 0px rgb(64 19 19);
+    height: absolute;
+}
+
+a {
+ text-decoration: none;
+ color: #313030;
+}
+
+.img_on_box {width: 100%;}
+
+.red {
+color: red}
+
+/*  Post.html  */
+
+table {color: #5d5c5c;
+       width: 100%;}
+.img-post{
+width: 35%;
+}
+.content-post{
+width:65%;
+padding-left: 20%;
+}
+
+a.button7 {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+}
+a.button7:hover { background: rgb(53, 167, 110); }
+a.button7:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+
+/*  Cart.html  */
+.cart-table-content{
+height: 100px;
+}
+
+#cart-table {
+align: center;
+}
+
+.center-td{text-align: center;}

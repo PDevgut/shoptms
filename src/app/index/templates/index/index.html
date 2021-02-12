@@ -1,0 +1,12 @@
+{% extends "base_.html" %}
+
+{% block main %}
+{% for product in products %}
+<div class="blog_box">
+    <a href="{{ product.get_absolute_url }}"><img src="{{ product.image.url }}" class ="img_on_box"></a>
+    <a href="{{ product.get_absolute_url }}"><h3> <span>{{ product.title }}</span></h3></a>
+    <a href="{{ product.get_absolute_url }}"><h4>Стоимость: <strike>{{ product.price }}</strike> руб.</h4></a>
+    <a href="{{ product.get_absolute_url }}"><h3>Цена со скидкой: <span class="red">{{ product.sale_price }}</span> руб.</h3></a>
+</div>
+{% endfor %}
+{% endblock %}

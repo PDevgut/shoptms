@@ -1,0 +1,27 @@
+{% extends "base_.html" %}
+
+{% block main %}{% load static %}
+
+    <div class="post_page">
+        <table>
+          <tr>
+              <td class="img-post"> <img src="{{ product.image.url }}" class ="img_on_box"> </td>
+              <td class="content-post">
+                  <h3>{{ product.title }}</h3>
+                  <h4>Старая цена: <strike>{{ product.price }}</strike> руб.</h4>
+                  <h3>Цена со скидкой: <span class="red">{{ product.sale_price }}</span> руб.</h3>
+                  {% if not user.is_anonymous %}
+                  <a  href="add/{{ product.pk }}" class="button7">Добавить в корзину</a>
+                  {% endif %}
+                  {% if user.is_anonymous %}<h3>Для покупки, войдите в личный кабинет</h3>{% endif %}
+              </td>
+
+          </tr>
+        </table>
+        <p>Описание: {{ product.descriptions }}</p>
+        <hr>
+    {% block property %}{% endblock %}
+
+    </div>
+
+{% endblock %}

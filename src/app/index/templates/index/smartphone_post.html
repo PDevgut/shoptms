@@ -1,0 +1,26 @@
+{% extends "index/post.html" %}
+
+{% block property %}{% load static %}
+<table class="table-property">
+    <tr>
+      <td>Диагональ экрана</td>
+      <td class="td-right">{{ product.diagonal }}'</td>
+    </tr>
+    <tr>
+      <td>Тип экрана</td>
+      <td class="td-right" >{{ product.display }}</td>
+    </tr>
+    <tr>
+      <td>Оперативная память</td>
+      <td class="td-right">{{ product.ram }} Гб</td>
+    </tr>
+    <tr>
+      <td>Видеокарта</td>
+      <td class="td-right">{{product.video}} Гб</td>
+    </tr>
+    <tr>
+      <td>Объем жесткого диска</td>
+      <td class="td-right">{{ product.hdd}} Гб</td>
+    </tr>
+</table>
+{% endblock %}
