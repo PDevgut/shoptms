@@ -8,8 +8,8 @@ try:
 
     sys.path.append(_this_dir)
 
-    from consts import DIR_SRC
-    from utils import get_setting
+    from .consts import DIR_SRC
+    from .utils import get_setting
 finally:
     print("[done] reading Gunicorn config")
 
