@@ -38,5 +38,5 @@ ci:
   TEST_BROWSER: "firefox"
 
 heroku:
-  HOST: "My37.herokuapp.com"
+  HOST: "shoptms.herokuapp.com"
   MODE_DEBUG: false
