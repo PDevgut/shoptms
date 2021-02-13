@@ -1,1 +1,2 @@
-web: gunicorn project.wsgi:application
+release: make data
+web: make run-prod

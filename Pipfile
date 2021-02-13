@@ -1,0 +1,31 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "==20.8b1"
+colorama = "*"
+httpie = "*"
+ipython = "*"
+isort = "*"
+pudb = "*"
+pytest = "*"
+pytest-mock = "*"
+pytest-selenium = "*"
+
+[packages]
+atomicwrites = "*"
+delorean = "*"
+dj-database-url = "*"
+django = "*"
+dynaconf = { extras = ["yaml"], version = "*" }
+gunicorn = "*"
+pillow = "*"
+psycopg2-binary = "*"
+pydantic = "*"
+sentry-sdk = "*"
+whitenoise = "*"
+
+[requires]
+python_version = "3.9"
